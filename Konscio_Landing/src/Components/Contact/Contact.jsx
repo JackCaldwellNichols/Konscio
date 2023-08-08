@@ -66,7 +66,7 @@ const handleSubmit = async (e) => {
                         )}
                         {error && (<span style={{color: 'red', marginTop: '20px'}}>{error}</span>)}
                         <input type="checkbox" name="" id="agree" onChange={checkboxHandler}/>
-                <label htmlFor="agree"> Acepto la <b>Política de Privacidad</b></label>
+                        <label htmlFor="agree"> Acepto la <b>Política de Privacidad</b></label>
                     </div>
                 </form>
   
