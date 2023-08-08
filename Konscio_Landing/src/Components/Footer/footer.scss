@@ -1,0 +1,117 @@
+@import '../../global.scss';
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    height: 300px;
+    width: 100vw;
+    font-family: 'Noto Sans Vithkuqi';
+    @include mobile{
+       flex-direction: column;
+       justify-content: center;
+       padding: 20px;
+       height: max-content;
+        }
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        flex: 1;
+        .fundacionProyecta{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            @include mobile{
+                flex-direction: column;
+                gap: 10px;
+                 }
+            .orgImg{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid green;
+                padding: 10px;
+                border-radius: 50%;
+                img {
+                    height: 100px;
+                    object-fit: cover;
+                    width: 100px;
+                }
+            }
+            .orgInfo {
+                display: flex;
+                flex-direction: column;
+                @include mobile{
+                    align-items: center;
+                    
+                     }
+            }
+        }
+        .vidaSostenible{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            @include mobile{
+                flex-direction: column;
+                gap: 10px;
+                 }
+            .orgImg{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid green;
+                padding: 10px;
+                border-radius: 50%;
+                img {
+                    height: 100px;
+                    object-fit: cover;
+                    width: 100px;
+                }
+            }
+        }
+        .orgInfo {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            @include mobile{
+                align-items: center;
+                
+                 }
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        flex: 1;
+        .rightWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include mobile{
+                flex-direction: row;
+                font-size: 12px;
+                padding-top: 50px;
+                
+                 }
+            .rightText{
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+        .iconWrapper {
+            display: flex;
+            gap: 10px;
+            .icon{
+                font-size: 30px;
+                border: 1px solid black;
+                padding: 4px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+}

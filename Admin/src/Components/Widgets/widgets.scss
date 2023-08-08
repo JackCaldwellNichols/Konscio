@@ -1,0 +1,22 @@
+.widgets {
+    padding: 40px;
+    .widgetWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        .card {
+            -webkit-box-shadow: 10px 10px 26px -11px rgba(239, 239, 239, 0.75);
+            -moz-box-shadow: 10px 10px 26px -11px rgba(248, 248, 248, 0.75);
+            box-shadow: 10px 10px 26px -11px rgba(251, 251, 251, 0.75);
+            height: 200px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid white;
+            color: white;
+        }
+    }
+}

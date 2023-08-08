@@ -1,0 +1,13 @@
+.sidebar {
+    width: 300px;
+    border-right: 1px solid black;
+    height: 100vh;
+    border-right: 0.5px solid white;
+    ul{
+        color: white;
+        list-style: none;
+        li{
+            cursor: pointer;
+        }
+    }
+}

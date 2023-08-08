@@ -1,0 +1,17 @@
+.nav {
+    .right {
+        border: 1px solid white;
+        padding: 15px;
+        border-radius: 30px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background-color: white;
+            color: black;
+            transition: 1s all;
+        }
+        
+    }
+}

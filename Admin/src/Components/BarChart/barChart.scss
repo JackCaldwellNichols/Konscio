@@ -1,0 +1,19 @@
+.barChart {
+    -webkit-box-shadow: 10px 10px 26px -11px rgba(239, 239, 239, 0.75);
+    -moz-box-shadow: 10px 10px 26px -11px rgba(248, 248, 248, 0.75);
+    box-shadow: 10px 10px 26px -11px rgba(251, 251, 251, 0.75);
+    border: 1px solid white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0px auto;
+   .chartTitle{
+    color: white;
+    padding-top: 20px;
+    padding-left: 40px;
+   }
+  
+}

@@ -1,0 +1,133 @@
+@import '../../global.scss';
+
+
+.hero {
+    background: url('https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    height: 100vh;
+    background-size: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans Vithkuqi';
+    flex-direction: column;
+    position: relative;
+    @include mobile{
+        height: max-content;
+        }
+    @include tablet{
+        height: max-content;
+        }
+    .nav {
+        color: white;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        justify-content: end;
+        cursor: pointer;
+        @include mobile{
+            display: none;
+            }
+    }
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+        @include mobile{
+            flex-direction: column;
+            padding: 20px;
+            }
+        @include tablet{
+            flex-direction: column;
+            padding: 20px;
+            }
+        .left{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            @include mobile{
+                font-size: 30px;
+                text-align: center;
+                padding: 20px 0px;
+                margin-top: 30px;
+                }
+            @include tablet{
+                font-size: 30px;
+                text-align: center;
+                padding: 20px 0px;
+                margin-top: 30px;
+                }
+            h1 {
+                font-size: 60px;
+                @include mobile{
+                    font-size: 30px;
+                    text-align: center;
+                    margin: 10px 0px;
+                    }
+                @include tablet{
+                    font-size: 40px;
+                    text-align: center;
+                  
+                    }
+            }
+            
+        }
+        .right {
+            flex: 1;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            p{
+                line-height: 50px;
+                letter-spacing: 0.5px;
+                font-size: 25px;
+                text-align: justify;
+                @include mobile{
+                    font-size: 25px;
+                    line-height: 35px;
+                    text-align: center;
+                    
+                    }
+                @include tablet{
+             
+                    text-align: center;
+                    }
+            }
+            a {
+                background-color: white;
+                height: 50px;
+                padding: 10px;
+                width: 200px;
+                border-radius: 40px;
+                font-size: 20px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    background-color: aliceblue;
+                }
+                @include mobile{
+                  height: 10px;
+                  width: 120px;
+                  padding: 10px;
+                    }
+                @include tablet{
+                    height: 10px;
+                    width: 120px;
+                    padding: 20px;
+                        }
+            }
+        }
+    }
+
+}
