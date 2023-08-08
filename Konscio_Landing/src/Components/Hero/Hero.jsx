@@ -20,7 +20,6 @@ const Hero = () => {
                 Necesitamos cambiar el camino. <br />
                 Necesitamos una vida colaborativa. <br />
                 Necesitamos una vida equilibrada con el medio ambiente. <br />
-                Necesitamos una vaida de felicidad. <br />
                 En Fundación Proyecta, tenemos la solución.
                 Cohousing.
                 </p>

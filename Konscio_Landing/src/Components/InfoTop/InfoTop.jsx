@@ -7,9 +7,7 @@ const InfoTop = () => {
     <div className='infoTop'>
         <div className="wrapperTop">
             <div className='infoTopHeader'>
-       
-                    <h1 className='infoTopTitle'>Una vida justa. Una comunidad.</h1>
-        
+                 <h1 className='infoTopTitle'>Una vida justa. Una comunidad.</h1>
             </div>
             <div className="infoTopMain">
                 <div className="leftTop">
