@@ -59,14 +59,16 @@ const handleSubmit = async (e) => {
                     </div>
                     <div className="bottom">
                         <textarea placeholder='¿Qué es lo que te interesa?' ref={messageRef}/>
-                        {loading === true ? (
-                        <button type='submit' className='contactBtn'>Espera...</button>
-                        ) : (
-                        <button type='submit' className='contactBtn' disabled={!agree}>Enviar</button>
-                        )}
-                        {error && (<span style={{color: 'red', marginTop: '20px'}}>{error}</span>)}
-                        <input type="checkbox" name="" id="agree" onChange={checkboxHandler}/>
-                        <label htmlFor="agree"> Acepto la <b>Política de Privacidad</b></label>
+                          {loading === true ? (
+                          <button type='submit' className='contactBtn'>Espera...</button>
+                          ) : (
+                          <button type='submit' className='contactBtn' disabled={!agree}>Enviar</button>
+                          )}
+                          {error && (<span style={{color: 'red', marginTop: '20px'}}>{error}</span>)}
+                        <div className="contactBtnWrapper">
+                          <input type="checkbox" className='agree' id="agree" onChange={checkboxHandler}/>
+                          <label htmlFor="agree"> Acepto la <b>Política de Privacidad</b></label>
+                        </div>
                     </div>
                 </form>
   
