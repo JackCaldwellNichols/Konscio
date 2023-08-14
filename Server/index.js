@@ -8,7 +8,7 @@ const authRoute = require('./Routes/auth.js')
 
 dotenv.config()
 
-const port = process.env.PORT
+const port = process.env.PORT || 8000
 
 //middleware
 

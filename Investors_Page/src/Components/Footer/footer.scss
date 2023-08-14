@@ -1,0 +1,90 @@
+.footer {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    margin: 10px 0px;
+    font-family: 'Roboto';
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        flex: 1;
+ 
+        .fundacionProyecta{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            .orgImg{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid green;
+                padding: 10px;
+                border-radius: 50%;
+                img {
+                    height: 100px;
+                    object-fit: cover;
+                    width: 100px;
+                }
+            }
+            .orgInfo {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .vidaSostenible{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            .orgImg{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid green;
+                padding: 10px;
+                border-radius: 50%;
+                img {
+                    height: 100px;
+                    object-fit: cover;
+                    width: 100px;
+                }
+            }
+        }
+        .orgInfo {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        flex: 1;
+        .rightWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .rightText{
+                width: 100px;
+                text-align: center;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+        }
+        .iconWrapper {
+            display: flex;
+            gap: 10px;
+            .icon{
+                font-size: 30px;
+                border: 1px solid black;
+                padding: 4px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+}

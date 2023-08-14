@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #84bc41;
+    background-color: #c9c1a7;
     height: max-content;
     font-family: 'Noto Sans Vithkuqi';
     @include tablet{
@@ -27,10 +27,9 @@
             flex-direction: column;
             h1 {
                 color: rgb(255, 255, 255);
-                font-family: 'Lora';
-                font-weight: 200;
                 font-style: italic;
-                font-size: 70px;
+                font-size: 60px;
+                font-family: 'Inter';
                 @include mobile{
                     font-size: 30px;
                     text-align: center;
@@ -75,7 +74,7 @@
                 flex-direction: column;
                 gap: 30px;
                 input {
-                    height: 50px;
+                    height: 60px;
                     width: 500px;
                     border-radius: 30px;
                     padding-left: 10px;
@@ -95,7 +94,7 @@
                 flex-direction: column;
                 gap: 30px;
                 input {
-                    height: 50px;
+                    height: 60px;
                     width: 500px;
                     border-radius: 30px;
                     padding-left: 10px;

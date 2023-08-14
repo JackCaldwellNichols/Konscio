@@ -17,7 +17,6 @@
         align-items: center;
         gap: 30px;
         flex: 1;
- 
         .fundacionProyecta{
             display: flex;
             align-items: center;
@@ -42,8 +41,9 @@
             .orgInfo {
                 display: flex;
                 flex-direction: column;
+                width: 300px;
                 @include mobile{
-                    align-items: center;
+                    text-align: center;
                     
                      }
             }
@@ -63,6 +63,7 @@
                 border: 1px solid green;
                 padding: 10px;
                 border-radius: 50%;
+                background-color: rgb(17, 13, 50);
                 img {
                     height: 100px;
                     object-fit: cover;
@@ -74,6 +75,7 @@
             display: flex;
             flex-direction: column;
             margin-left: 30px;
+            width: 300px;
             @include mobile{
                 align-items: center;
                 margin-left: 0px;
@@ -95,18 +97,22 @@
                 justify-content: space-around;
                 font-size: 12px;
                 padding-top: 50px;
-                
+                width: 90vw;
                  }
             .rightText{
-                width: 100px;
+                width: 200px;
                 text-align: center;
                 cursor: pointer;
                 margin-bottom: 10px;
+                padding: 0px 10px;
             }
         }
         .iconWrapper {
             display: flex;
             gap: 10px;
+            a {
+                text-decoration: none;
+            }
             .icon{
                 font-size: 30px;
                 border: 1px solid black;

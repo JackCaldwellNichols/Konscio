@@ -5,9 +5,7 @@ import Nav from '../Nav/Nav'
 const Hero = () => {
   return (
     <div className='hero'>
-      <div className="nav">
         <Nav />
-      </div>
         <div className="wrapper">
             <div className="left">
                 <h1 className="titleMain">Una vida sostenible.</h1>
@@ -18,10 +16,9 @@ const Hero = () => {
                 <p>
                 Vivimos en tiempos de incertidumbre, sobrecostes y soledad. <br />
                 Necesitamos cambiar el camino. <br />
-                Necesitamos una vida colaborativa. <br />
                 Necesitamos una vida equilibrada con el medio ambiente. <br />
-                En Fundación Proyecta, tenemos la solución.
-                Cohousing.
+                En Fundación Proyecta Konscio, tenemos la solución. <br />
+                El  <b style={{color: '#84bc41'}}>Co-Housing.</b>
                 </p>
                 <br />
                 <a href='#contact'>Saber Más</a>

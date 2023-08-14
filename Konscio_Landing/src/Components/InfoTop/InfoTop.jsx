@@ -1,35 +1,40 @@
 import React from 'react'
 import './infoTop.scss'
-import Fade from 'react-reveal/Fade';
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
 const InfoTop = () => {
   return (
     <div className='infoTop'>
         <div className="wrapperTop">
             <div className='infoTopHeader'>
-                 <h1 className='infoTopTitle'>Una vida justa. Una comunidad.</h1>
+                 <span className='infoTopTitle'>¿Y Qué es el Co-Housing?</span>
             </div>
             <div className="infoTopMain">
                 <div className="leftTop">
-                    <Fade left>
+                    <div className="leftIntro">
+                      <h3>Buena pregunta</h3>
+                      <ThumbUpIcon className='icon'/>
+                    </div>
+                       
                             <h4>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Enim ut tellus elementum sagittis. Facilisis mauris sit amet massa. 
-                                Leo integer malesuada nunc vel. Non blandit massa enim nec. 
-                                Ac auctor augue mauris augue. 
-                                Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Diam sit amet nisl suscipit. Quis varius quam quisque id diam vel quam elementum. 
-                                Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. 
-                                Elementum pulvinar etiam non quam lacus. 
-                                Duis ut diam quam nulla porttitor massa id neque. 
+                                El Co-Housing es una forma de vida colaborativa, donde
+                                los grupos colaborativas, cada uno o en pareja, posees un
+                                apartamento privado para  preservr suintimidad y comparten grandes
+                                áreas comunes y actividades en talleres, excursiones, fiestas, 
+                                conciertos, sin olvidar la asistencia médica cuando lo precisan.
+                                <br /><br />
+                                No hay jerarquías, y los roels se reparten de forma natural.
+                                La economía es privada, y las viviendas cuentan con todos los elementos
+                                que aseguran la independencia de los residentes. A pesar de ello, o
+                                justamente por este motivo, existen zonas comunes significativas, que se 
+                                comprenden como extensión de las viviendas cuta administración sigue
+                                a cargo del grupo que habita la comunidad.
                             </h4>
-                    </Fade>
+                            <a className='infoTopBtn' href='#contact'>Saber Más</a>
                 </div>
-                <div className="rightTop">
-                    <Fade right>
-                        <img src='https://images.pexels.com/photos/3182767/pexels-photo-3182767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
-                    </Fade>
-                </div>
+                {/* <div className="rightTop">
+                        <img src='https://cdn.pixabay.com/photo/2018/08/18/08/05/people-3614311_1280.jpg'/>
+                </div> */}
             </div>
         </div>
     </div>

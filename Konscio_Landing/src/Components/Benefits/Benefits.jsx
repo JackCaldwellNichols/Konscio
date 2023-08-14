@@ -3,6 +3,9 @@ import './benefits.scss'
 import SpaIcon from '@mui/icons-material/Spa';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Diversity1Icon from '@mui/icons-material/Diversity1';
+import Diversity3Icon from '@mui/icons-material/Diversity3';
+import BalanceIcon from '@mui/icons-material/Balance';
+import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
 
 const Benefits = () => {
   return (
@@ -10,13 +13,14 @@ const Benefits = () => {
         <div className='benefitsHeader'>
                 <h1 className='benefitsTitle'>Los beneficios del Co-housing</h1>
         </div>
-        <div className="wrapper">
+      <div className="wrapper">
       <div className="card">
         <div className="cardTop">
             <SpaIcon className='cardIcon'/>
         </div>
         <div className="cardInfo">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ullam reiciendis velit exercitationem, alias aliquid minus corrupti nisi molestiae dignissimos nesciunt, voluptates ab blanditiis beatae, veniam dolore quod quibusdam dolores!
+            <h3>BIENESTAR PERSONAL</h3>
+            <span>Las personas primero. Autonomía y privacidad. Apoyo mutuo, ocio común y co-cuidados.</span>
         </div>
       </div>
       <div className="card">
@@ -24,7 +28,17 @@ const Benefits = () => {
                 <FavoriteIcon className='cardIcon'/>
             </div>
             <div className="cardInfo">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro odio maxime alias obcaecati vitae, quis deserunt eius saepe veritatis quo eos, dolor possimus inventore voluptas reprehenderit architecto sapiente ut similique!
+            <h3>VIVIENDA SALUDABLE</h3>
+            <span>Una casa ecológica, hecha a tu medida, para tu bienestar emocional..</span>
+            </div>
+        </div>
+        <div className="card">
+            <div className="cardTop">
+                <BalanceIcon className='cardIcon'/>
+            </div>
+            <div className="cardInfo">
+            <h3>ESTABILIDAD</h3>
+            <span>Vivir de estabilidad, sin permanencia, hasta cuando quieras. </span>
             </div>
         </div>
         <div className="card">
@@ -32,7 +46,28 @@ const Benefits = () => {
                 <Diversity1Icon className='cardIcon'/>
             </div>
             <div className="cardInfo">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nam unde distinctio, natus facere ducimus veniam nemo. Nam dolorem officia repellendus nulla aliquam dignissimos earum? Minima ipsa obcaecati dignissimos culpa!
+            <h3>ENVEJECIMIENTO DIGNO</h3>
+            <span>El entorno ideal para un envejecimiento activo y 
+                        seguro. </span>
+            </div>
+        </div>
+        <div className="card">
+            <div className="cardTop">
+                <Diversity3Icon className='cardIcon'/>
+            </div>
+            <div className="cardInfo">
+            <h3>CONEXIÓN SOCIAL</h3>
+            <span>Conocer a todos los vecinos, compartir momentos, 
+              mantener conexiones es fundamental para una buena calidad de vida.</span>
+            </div>
+        </div>
+        <div className="card">
+            <div className="cardTop">
+                <PointOfSaleIcon className='cardIcon'/>
+            </div>
+            <div className="cardInfo">
+            <h3>AHORRAR</h3>
+            <span>Gastos mínimos y copmartidos, el co-housing ofrece la posibilidad de ahorrar.</span>
             </div>
         </div>
         </div>

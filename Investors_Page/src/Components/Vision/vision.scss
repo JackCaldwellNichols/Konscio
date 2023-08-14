@@ -1,0 +1,97 @@
+.vision {
+    margin: 100px 0px;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .vistionTitle {
+        font-size: 50px;
+        font-weight: 300;
+        color: rgb(17, 89, 17);
+        padding: 30px 50px;
+        text-align: center;
+    }
+    .visionWrapper {
+        display: flex;
+        align-items: center;
+        gap: 150px;
+        .visionLeft {
+            flex: 1;
+            height: 500px;
+            width: 500px;
+            border: 1px solid rgb(236, 242, 236);
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            flex-direction: column;
+            background: -webkit-linear-gradient(to top, #edebd4, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #edebd4, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            transition: 0.3s ease-in;
+            position: relative;
+            &:hover {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+            .visionLeftTop{
+                font-size: 30PX;
+                text-align: center;
+            }
+            .visionLeftBottom {
+                line-height: 30px;
+                padding: 30px;
+                text-align: justify;
+                font-size: 20px;
+                .VisionLeftBtmText{
+                    line-height: 30px;
+                    padding: 30px;
+                    text-align: justify;
+                    font-size: 20px;
+                }
+                img {
+                    position: absolute;
+                    height: 230px;
+                    bottom: 0;
+                    left: 30px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .visionRight{
+            flex: 1;
+            height: 500px;
+            width: 500px;
+            border: 1px solid rgb(236, 242, 236);
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            flex-direction: column; 
+            background: -webkit-linear-gradient(to top, #edebd4, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #edebd4, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            transition: 0.3s ease-in;
+            position: relative;
+            &:hover {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+            .visionRightTop{
+                font-size: 30PX;
+                text-align: center;
+            }
+            .visionRightBottom {
+                display: flex;
+                flex-direction: column;
+                .VisionRightBtmText{
+                    line-height: 30px;
+                    padding: 30px;
+                    text-align: justify;
+                    font-size: 20px;
+                }
+                img {
+                    position: absolute;
+                    height: 300px;
+                    bottom: 0;
+                    left: 30px;
+                }
+            }
+        }
+
+    }
+}

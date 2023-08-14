@@ -60,7 +60,7 @@ const handleSubmit = async (e) => {
                     <div className="bottom">
                         <textarea placeholder='¿Qué es lo que te interesa?' ref={messageRef}/>
                           {loading === true ? (
-                          <button type='submit' className='contactBtn'>Espera...</button>
+                          <button type='submit' className='contactBtn'>Enviando...</button>
                           ) : (
                           <button type='submit' className='contactBtn' disabled={!agree}>Enviar</button>
                           )}

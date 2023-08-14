@@ -14,8 +14,8 @@ const Footer = () => {
               <img src={FP} alt="Fundación Social" />
             </div>
             <div className="orgInfo">
-              <span className='orgName'>Fundación Proyecta</span>
-              <span className='orgName'>www.fundacionproyecta.org</span>
+              <span className='orgName'>Fundación Proyecta Konscio</span>
+  
             </div>
           </div>
           <div className="vidaSostenible">
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <div className="orgInfo">
               <span className='orgName'>Vida Sostenible</span>
-              <span className='orgName'>www.vidasostenible.info</span>
+
             </div>
           </div>
         </div>
@@ -36,8 +36,8 @@ const Footer = () => {
             <span className='rightText'>Política de Privacidad</span>
           </div>
             <div className="iconWrapper">
-              <FacebookIcon className='icon'/>
-              <InstagramIcon className='icon'/>
+              <a href='https://www.facebook.com/ProyectaKonscio' target='_blank'><FacebookIcon className='icon'/></a>
+              <a href='https://www.instagram.com/proyectakonscio/' target='_blank'><InstagramIcon className='icon'/></a>
             </div>
         </div>
     </div>

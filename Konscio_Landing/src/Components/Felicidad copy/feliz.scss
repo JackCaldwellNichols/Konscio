@@ -1,0 +1,36 @@
+@import '../../global.scss';
+
+.feliz {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/02/14/48/people-2571917_1280.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tablet{
+        background-position: center;
+       height: 60vh;
+        }
+    @include mobile{
+        background-position: center;
+       height: 50vh;
+        }
+    .felizTitle{
+        color: white;
+        font-style: italic;
+        font-size: 60px;
+        font-family: 'Inter';
+        @include tablet{
+            font-size: 60px;
+            color: white;
+            font-weight: 500;
+             }
+        @include mobile{
+            font-size: 30px;
+            color: white;
+            font-weight: 500;
+             }
+    }
+}
