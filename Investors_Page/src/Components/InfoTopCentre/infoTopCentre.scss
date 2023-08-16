@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .infoTopCentre {
     padding: 20px;
     height: max-content;
@@ -5,7 +7,12 @@
     align-items: center;
     justify-content: center;
     font-family: 'Roboto';
-    margin: 100px 0px;
+    margin: 80px 0px;
+    
+    @include mobile{
+        padding: 10px;
+        margin: 50px 0px;
+         }
     .infoWrapperCentre{
         display: flex;
         align-items: center;
@@ -14,39 +21,81 @@
         padding: 30px;
         width: 70%;
         height: 500px;
+        @include tablet{
+            flex-direction: column;
+            height: max-content;
+            gap: 40px;
+                }
+        @include mobile{
+            flex-direction: column; 
+            height: max-content;
+            padding: 10px;
+            width: 90%;
+             }
         .infoTopCentreRight{
             flex: 1;
             display: flex;
             align-items: end;
             flex-direction: column;
             width: 100%;
+            position: relative;
+            @include tablet{
+                align-items: start;
+                 }
+            @include mobile{
+                align-items: start;
+                 }
+            .techTitle {
+                @include mobile{
+                    font-size: 25px;
+                     }
+            }
+            .arrowLeft {
+                @include tablet{
+                    transform: rotate(180deg);
+                    position: absolute;
+                    left: 165px;
+                     }
+                @include mobile{
+                    transform: rotate(180deg);
+                    position: absolute;
+                    left: 135px;
+                     }
+            }
             .infoTextCentreTitle {
                 text-align: left;
+                @include mobile{
+                    font-size: 20px;
+                     }
             }
             .infoTopCentreText{
                 width: 100%;
                 font-size: 20px;
                 line-height: 35px;
                 text-align: justify;
+           
             }
-            button {
-                padding: 10px;
-                    width: 150px;
-                    height: 50px;
-                    border: none;
-                    font-size: 18px;
-                    border-radius: 30px;
-                    cursor: pointer;
-                    color: rgb(17, 89, 17);
-                    background-color: white;
-                    margin: 30px 0px;
-                    border: 1px solid rgb(17, 89, 17);
-                    transition: 0.3s ease-in;
-                    &:hover {
-                        color: white;
-                        background-color: rgb(17, 89, 17); 
-                        
-                    }
+            .saber {
+                background-color: #84bc41;
+                height: 50px;
+                width: 140px;
+                border-radius: 40px;
+                border: 1px solid white;
+                font-size: 20px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: white;
+                transition: 0.3s ease-in;
+                margin: 30px 0px;
+                &:hover {
+                    color: #84bc41;
+                    background-color: white; 
+                    border: 1px solid #84bc41;
+                    
+                }
             }
             
         }
@@ -56,11 +105,20 @@
             align-items: start;
             flex-direction: column;
             width: 100%;
+            @include tablet{
+                order: 1;
+                 }
+            @include mobile{
+                display: none;
+                 }
             .infoTopCentreImg {
                 border-radius: 30px;
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
+                @include tablet{
+                    width: 100%;
+                       }
             }
            
         }

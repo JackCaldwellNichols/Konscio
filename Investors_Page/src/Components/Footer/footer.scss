@@ -1,21 +1,30 @@
+@import '../../global.scss';
 .footer {
     display: flex;
     align-items: center;
     height: 300px;
     width: 100%;
+    font-family: 'Noto Sans Vithkuqi';
     margin: 10px 0px;
-    font-family: 'Roboto';
+    @include mobile{
+       flex-direction: column;
+       height: max-content;
+       padding: 20px 0px;
+        }
     .left{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
         flex: 1;
- 
         .fundacionProyecta{
             display: flex;
             align-items: center;
             width: 50%;
+            @include mobile{
+                flex-direction: column;
+                gap: 10px;
+                 }
             .orgImg{
                 display: flex;
                 align-items: center;
@@ -32,12 +41,21 @@
             .orgInfo {
                 display: flex;
                 flex-direction: column;
+                width: 300px;
+                @include mobile{
+                    text-align: center;
+                    
+                     }
             }
         }
         .vidaSostenible{
             display: flex;
             align-items: center;
             width: 50%;
+            @include mobile{
+                flex-direction: column;
+                gap: 10px;
+                 }
             .orgImg{
                 display: flex;
                 align-items: center;
@@ -45,6 +63,7 @@
                 border: 1px solid green;
                 padding: 10px;
                 border-radius: 50%;
+                background-color: rgb(17, 13, 50);
                 img {
                     height: 100px;
                     object-fit: cover;
@@ -56,6 +75,11 @@
             display: flex;
             flex-direction: column;
             margin-left: 30px;
+            width: 300px;
+            @include mobile{
+                align-items: center;
+                margin-left: 0px;
+                 }
         }
     }
     .right{
@@ -68,19 +92,28 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            @include mobile{
+                flex-direction: row;
+                justify-content: space-around;
+                font-size: 12px;
+                padding-top: 50px;
+                width: 90vw;
+                 }
             .rightText{
-                width: 100px;
+                width: 200px;
                 text-align: center;
                 cursor: pointer;
                 margin-bottom: 10px;
+                padding: 0px 10px;
             }
         }
         .iconWrapper {
             display: flex;
             gap: 10px;
             .icon{
+                color: black;
                 font-size: 30px;
-                border: 1px solid black;
+                border: 1px solid gray;
                 padding: 4px;
                 border-radius: 50%;
                 cursor: pointer;

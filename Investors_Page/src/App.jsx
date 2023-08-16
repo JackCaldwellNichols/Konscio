@@ -10,6 +10,9 @@ import Contact from './Components/Contact/Contact'
 import Examples from './Components/Examples/Examples'
 import Nav from './Components/Navigation/Nav'
 import Footer from './Components/Footer/Footer'
+import Banner from './Components/Banner/Banner'
+import Cohousing from './Components/CoHousing/Cohousing'
+import BannerBottom from './Components/BannerBottom/BannerBottom'
 
 function App() {
 
@@ -17,7 +20,10 @@ function App() {
     <div className='app'>
       <Nav />
       <Hero />
-      <Benefits />
+      <Cohousing />
+      <Banner />
+      <Benefits /> 
+      <BannerBottom />
       <hr />
       <InfoTop /> 
       <hr />

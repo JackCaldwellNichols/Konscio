@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
 import './contact.scss'
-//import axios from 'axios'
+import axios from 'axios'
 
 const Contact = () => {
 
@@ -20,24 +20,24 @@ const checkboxHandler = () => {
   // Don't miss the exclamation mark
 }
 
-// const handleSubmit = async (e) => {
-//     e.preventDefault()
-//     setLoading(true)
-//     try {
-//       const res = await axios.post('http://localhost:8800/api/users', {
-//         name: nameRef.current.value,
-//         phone: phoneRef.current.value,
-//         email: emailRef.current.value,
-//         time: timeRef.current.value,
-//         message: messageRef.current.value
-//       })
-//       setLoading(false)
-//     } catch (error) {
-//         setError(error.response.data)
-//         setLoading(false)
+const handleSubmit = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    try {
+      const res = await axios.post('http://localhost:8800/api/users', {
+        name: nameRef.current.value,
+        phone: phoneRef.current.value,
+        email: emailRef.current.value,
+        time: timeRef.current.value,
+        message: messageRef.current.value
+      })
+      setLoading(false)
+    } catch (error) {
+        setError(error.response.data)
+        setLoading(false)
  
-//     }
-// }
+    }
+}
 
   return (
     <div className='contact' id='contact'>
@@ -46,7 +46,7 @@ const checkboxHandler = () => {
                 <h4>Mándanos tus datos de contacto y te informaremos más.</h4>
             </div>
             <div className="contactFormWrapper">
-                <form className='contactFrom'>
+                <form className='contactFrom' onSubmit={handleSubmit}>
                     <div className="top">
                         <div className="left">
                             <input type="text" placeholder='Nombre' required ref={nameRef}/>
@@ -60,14 +60,15 @@ const checkboxHandler = () => {
                     <div className="bottom">
                         <textarea placeholder='¿Qué es lo que te interesa?' ref={messageRef}/>
                           {loading === true ? (
-                          <button type='submit' className='contactBtn'>Espera...</button>
+                          <button type='submit' className='contactBtn'>Enviando...</button>
                           ) : (
                           <button type='submit' className='contactBtn' disabled={!agree}>Enviar</button>
                           )}
                           {error && (<span style={{color: 'red', marginTop: '20px'}}>{error}</span>)}
                         <div className="contactBtnWrapper">
-                          {/* <input type="checkbox" className='agree' id="agree" onChange={checkboxHandler}/> */}
+                          <input type="checkbox" className='agree' id="agree" onChange={checkboxHandler}/>
                           <label htmlFor="agree"> Acepto la <b>Política de Privacidad</b></label>
+                      
                         </div>
                     </div>
                 </form>

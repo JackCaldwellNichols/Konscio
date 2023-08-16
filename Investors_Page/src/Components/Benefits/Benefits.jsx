@@ -8,7 +8,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 const Benefits = () => {
   return (
     <div className='benefits'>
-        <h1 className='benefitsHeader'>Los beneficios de invertir en el Co-Housing</h1>
+        <h1 className='benefitsHeader'>¿Por qué el Co-Housing?</h1>
         <div className="benefitsWrapper">
             <div className="benefitsCard">
                 <div className="cardTop">

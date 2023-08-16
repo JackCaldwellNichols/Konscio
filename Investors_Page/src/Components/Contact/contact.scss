@@ -1,26 +1,58 @@
+@import '../../global.scss';
+
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background: #edebd4;  /* fallback for old browsers */
+   background-color:#edebd4;;
     height: max-content;
-    font-family: 'Roboto';
+    font-family: 'Noto Sans Vithkuqi';
+    @include tablet{
+        flex-direction: column;
+        height: max-content;
+        padding: 20px;
+        
+        }
+    @include mobile{
+        flex-direction: column;
+        height: max-content;
+        padding: 20px;
+        }
         .contactTitle{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             h1 {
-                color: rgb(17, 89, 17);
-                font-weight: 200;
-                font-size: 70px;
+                color: #84bc41;
+                font-size: 60px;
+                font-family: 'Roboto';
+                font-weight: 400;
+                @include tablet{
+                    font-size: 35px;
+                    text-align: center;
+                        }
+                @include mobile{
+                    font-size: 32px;
+                    font-style: normal;
+                    text-align: center;
+                    font-weight: 300;
+                     }
             }
             h4 {
                 font-size: 30px;
-                color: rgb(17, 89, 17);
-
+                color: white;
+                @include tablet{
+                    font-size: 25px;
+                    text-align: center;
+                        }
+                @include mobile{
+                    font-size: 20px;
+                    text-align: center;
+                    color: #84bc41;;
+                        }
             }
         }
         .contactFormWrapper{
@@ -31,13 +63,20 @@
             display: flex;
             align-items: center;
             gap: 100px;
-
+            @include tablet{
+                flex-direction: column;
+                gap: 30px;
+                }
+            @include mobile{
+                flex-direction: column;
+                gap: 30px;
+                }
             .left {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
                 input {
-                    height: 50px;
+                    height: 60px;
                     width: 500px;
                     border-radius: 30px;
                     padding-left: 10px;
@@ -46,7 +85,12 @@
                     &:focus {
                         outline: none;
                     }
-    
+                    @include tablet{
+                        width: 800px;
+                    }
+                    @include mobile{
+                        width: 300px;
+                    }
             
                 }
             }
@@ -55,7 +99,7 @@
                 flex-direction: column;
                 gap: 30px;
                 input {
-                    height: 50px;
+                    height: 60px;
                     width: 500px;
                     border-radius: 30px;
                     padding-left: 10px;
@@ -64,7 +108,13 @@
                     &:focus {
                         outline: none;
                     }
-          
+                    @include tablet{
+                        width: 800px;
+                    }
+            
+                    @include mobile{
+                        width: 300px;
+                    }
             
                 }
             }
@@ -86,7 +136,9 @@
                 &:focus {
                     outline: none;
                 }
-      
+                @include mobile{
+                    height: 300px;
+                     }
             }
             .contactBtn {
                 margin-top: 40px;
@@ -101,13 +153,19 @@
                 &:hover {
                     background-color: aliceblue;
                 }
-
+                @include tablet{
+                    height: 40px;
+                    width: 150px;
+                    margin-bottom: 10px;
+                     }
+                @include mobile{
+                    height: 40px;
+                    width: 150px;
+                    margin-bottom: 10px;
+                     }
                 }
                 .contactBtnWrapper{
-                    position: absolute;
-                    left: 0px;
-                    bottom: 40px;
-           
+                        margin-top: 20px;
             }
           }
          }

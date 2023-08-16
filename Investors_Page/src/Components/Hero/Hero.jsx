@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="wrapper">
           <div className="heroTitleLeft">
              <h1>
-                El Co-Housing: Una oportunidad de invertir en un proyecto en plena alza.
+             El Co-Housing: para una sociedad mejor.
             </h1>
             <h3>
                 En la sociedad actual existen 2 fórmulas para acceder a una vivienda. En la Fundación Proyecta Konscio, en colaboración con Vida Sostenible, te proponemos una tercera: El Cohousing.
