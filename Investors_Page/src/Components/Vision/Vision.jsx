@@ -13,8 +13,14 @@ const Vision = () => {
                 <h4>Nuestra Misión</h4>
             </div>
             <div className="visionLeftBottom">
-                <span className='VisionLeftBtmText'>Nuestra programa, Konsciohousing, pretende promover conciencia sobre alternativas de vivienda comunitaria con finalidades de residencia permanente sostenible utilizando tecnología punta.</span>
-                <img src={mission} alt="" />
+                <span className='VisionLeftBtmText'>
+                  Facilitamos el desarrollo humano 
+                  con Proyectos de Vida para 
+                  comunidades saludables y colaborativas 
+                  entre personas afines 
+                  en viviendas privativas y servicios (Cohousing).
+              </span>
+                <img src={mission} alt="Fundación Proyecta Konscio Misión" />
             </div>
         </div>
         <div className="visionRight">
@@ -22,8 +28,13 @@ const Vision = () => {
                 <h4>Nuestra Visión</h4>
             </div>
             <div className="visionRightBottom">
-                <span className='VisionRightBtmText'>Empoderar a los ciudadanos a participar de proyectos cooperativos de residencia para vivir en comunidad, en sintonía con el medioambiente y con una visión integrada entre generaciones.</span>
-                <img src={vision} alt="" />
+                <span className='VisionRightBtmText'>
+                  Comunidades y personas más felices 
+                  en su medio ambiente, 
+                  facilitando el desarrollo humano mantenido
+                  de "abajo a arriba", por el bien común.
+                </span>
+                <img src={vision} alt="Fundación Proyecta Konscio Visión" />
             </div>
             
         </div>

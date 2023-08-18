@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <div className='nav'>
       <div className="left">
-        <a href="https://proyectakonscio.org/" target='_blank'><img src={logo} alt="" className='logo'/></a>
+        <a href="https://proyectakonscio.org/" target='_blank'><img src={logo} alt="Fundación Proyecta Konscion Logo" className='logo'/></a>
       </div>
       <div className="right">
         <FontAwesomeIcon icon={faPhone}/>

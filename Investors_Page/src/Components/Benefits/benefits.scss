@@ -18,7 +18,8 @@
         font-size: 50px;
         font-family: 'Roboto';
         font-weight: 400;
-        padding: 50px 0px 50px 0px;
+        padding: 50px 100px 50px 100px;
+        text-align: center;
         @include mobile{
             text-align: center;
             font-size: 30px;
@@ -30,7 +31,7 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        gap: 30px;
+        gap: 40px;
         flex-wrap: wrap;
         width: 80%;
         .benefitsCard{
@@ -65,7 +66,7 @@
         }
     }
     .benefitsBtn{
-        padding: 10px;
+        text-decoration: none;
         width: 200px;
         height: 60px;
         border: none;
@@ -77,6 +78,9 @@
         margin: 80px 0px;
         border: none;
         transition: 0.3s ease-in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &:hover {
             color: #84bc41;
             background-color: white; 

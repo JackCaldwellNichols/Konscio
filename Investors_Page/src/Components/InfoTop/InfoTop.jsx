@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 const InfoTop = () => {
   return (
     <div className='infoTop'>
-           <h1 className='infoWrapperTitle'>Lo que ofrecemos</h1>
+           <h1 className='infoWrapperTitle'>Por qué <span style={{color: '#84bc41'}}>nosotros</span></h1>
       <div className="infoWrapper">
             <div className="infoTopLeft">
                 <h1>Colaboración <FontAwesomeIcon icon={faArrowRight} style={{color: '#84bc41', paddingLeft: '5px'}}/></h1>
@@ -18,10 +18,10 @@ const InfoTop = () => {
                     fomenten la confianza necesaria para embarcarse juntos en el proceso de buscar terrenos, 
                     decidir el sistema constructivo y constituirse en una cooperativa. iti.
                 </span>
-                <a href='#contact' className='saber'>Saber Más</a>
+                <a href='https://proyectakonscio.org/blog/proyectos/plataforma-digital-konsciohousing' className='saber' target='_blank'>Saber Más</a>
             </div>
             <div className="infoTopRight">
-                <img className='infoTopImg' src='https://images.pexels.com/photos/5553128/pexels-photo-5553128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="" />
+                <img className='infoTopImg' src='https://images.pexels.com/photos/5553128/pexels-photo-5553128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="CoHousing Plataforma Konscio" />
             </div>
       </div>
     </div>

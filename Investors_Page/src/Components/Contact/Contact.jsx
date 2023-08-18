@@ -42,8 +42,8 @@ const handleSubmit = async (e) => {
   return (
     <div className='contact' id='contact'>
             <div className="contactTitle">
-                <h1>Contacta con nosotros.</h1>
-                <h4>Mándanos tus datos de contacto y te informaremos más.</h4>
+                <h1>Cuéntanos cómo prefieres invertir</h1>
+                <h4>Para ofrecerte una solución adecuada, segura y ética</h4>
             </div>
             <div className="contactFormWrapper">
                 <form className='contactFrom' onSubmit={handleSubmit}>

@@ -8,7 +8,7 @@ const InfoTopCentre = () => {
     <div className='infoTopCentre'>
       <div className="infoWrapperCentre">
             <div className="infoTopCentreLeft">
-            <img className='infoTopCentreImg' src='https://www.fmb.org.uk/static/92dc88f0-dbd6-4824-83e4bc0e4c2e0ae5/800x600_highestperformance__4a7c7e45a350/Supplied-by-Future-FusionDec21Loyn-Co-Architects-and-Kebony.jpg' alt="" />
+            <img className='infoTopCentreImg' src='https://www.fmb.org.uk/static/92dc88f0-dbd6-4824-83e4bc0e4c2e0ae5/800x600_highestperformance__4a7c7e45a350/Supplied-by-Future-FusionDec21Loyn-Co-Architects-and-Kebony.jpg' alt="Cohousing Construcción Materiales Konscio" />
             </div>
             <div className="infoTopCentreRight">
               <h1 className='techTitle'><FontAwesomeIcon icon={faArrowLeft} style={{color: '#84bc41'}} className='arrowLeft'/> Tecnología</h1>

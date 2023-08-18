@@ -7,7 +7,7 @@ const Cohousing = () => {
     <div className='coHouseTop'>
         <div className="wrapperTop">
             <div className='infoTopHeader'>
-                 <h1 className='infoTopTitle'>¿Y Qué es el Co-Housing?</h1>
+                 <h1 className='infoTopTitle'>¿Y Qué es el <span style={{color: '#84bc41'}}>Cohousing?</span></h1>
             </div>
             <div className="infoTopMain">
                 <div className="leftTop">
@@ -30,7 +30,7 @@ const Cohousing = () => {
                                 comprenden como extensión de las viviendas cuta administración sigue
                                 a cargo del grupo que habita la comunidad.
                             </h4>
-                            <a className='infoTopBtn' href='#contact'>Saber Más</a>
+                            {/* <a className='infoTopBtn' href='#contact'>Saber Más</a> */}
                 </div>
                 {/* <div className="rightTop">
                         <img src='https://cdn.pixabay.com/photo/2018/08/18/08/05/people-3614311_1280.jpg'/>
