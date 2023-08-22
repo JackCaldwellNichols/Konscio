@@ -6,14 +6,14 @@ const Cohousing = () => {
   return (
     <div className='coHouseTop'>
         <div className="wrapperTop">
-            <div className='infoTopHeader'>
+            {/* <div className='infoTopHeader'>
                  <h1 className='infoTopTitle'>¿Y Qué es el <span style={{color: '#84bc41'}}>Cohousing?</span></h1>
-            </div>
+            </div> */}
             <div className="infoTopMain">
                 <div className="leftTop">
                     <div className="leftIntro">
-                      <h3>Buena pregunta</h3>
-                      <ThumbUpIcon className='icon'/>
+                      {/* <h3>Buena pregunta</h3>
+                      <ThumbUpIcon className='icon'/> */}
                     </div>
                        
                             <h4>

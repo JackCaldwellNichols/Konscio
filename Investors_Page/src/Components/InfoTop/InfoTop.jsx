@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 const InfoTop = () => {
   return (
     <div className='infoTop'>
-           <h1 className='infoWrapperTitle'>Por qué <span style={{color: '#84bc41'}}>nosotros</span></h1>
+           <h1 className='infoWrapperTitle'>Lo que <span style={{color: '#84bc41'}}>ofrecemos</span></h1>
       <div className="infoWrapper">
             <div className="infoTopLeft">
                 <h1>Colaboración <FontAwesomeIcon icon={faArrowRight} style={{color: '#84bc41', paddingLeft: '5px'}}/></h1>

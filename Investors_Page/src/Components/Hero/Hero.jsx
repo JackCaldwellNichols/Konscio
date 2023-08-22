@@ -9,15 +9,15 @@ const Hero = () => {
       <div className="wrapper">
           <div className="heroTitleLeft">
              <h1>
-             Cohousing: para una sociedad mejor.
+            Invertir en Cohousing para una sociedad mejor.
             </h1>
             <h2>
-            Inversión ODS en Cohousing
+            Inversión ODS y ESG en Cohousing
             </h2>
             <p>
             Invierte en Cohousing de alquiler. Con garantía y gestión segura y un 7% a largo plazo. Con toda confianza.
             </p>
-            <a className='heroTitleBtn' target='_blank' href='https://www.vidasostenible.info/invertir-en-cohousing '>Saber Más</a> 
+            <a className='heroTitleBtn' target='_blank' href='https://www.vidasostenible.info/inversores/'>Saber Más</a> 
           </div>
             <div className='heroRight'>
               <div className="heroImgContainer">

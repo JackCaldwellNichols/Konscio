@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className='banner'>
         <span className='bannerTitle'>
-            Co-Housing: una alternativa residencial
+            Co-Housing: Una alternativa residencial Sénior e Intergeneracional
         </span>
     </div>
   )

@@ -13,6 +13,7 @@ import Footer from './Components/Footer/Footer'
 import Banner from './Components/Banner/Banner'
 import Cohousing from './Components/CoHousing/Cohousing'
 import BannerBottom from './Components/BannerBottom/BannerBottom'
+import Why from './Components/Why/Why'
 
 function App() {
 
@@ -20,8 +21,8 @@ function App() {
     <div className='app'>
       <Nav />
       <Hero />
-      <Cohousing />
       <Banner />
+      {/* <Cohousing /> */}
       <Benefits /> 
       <BannerBottom />
       <hr />
@@ -33,6 +34,7 @@ function App() {
       <hr />
       <hr />
       {/* <Examples /> */}
+      <Why />
       <Vision />
       <Contact />
       <Footer />

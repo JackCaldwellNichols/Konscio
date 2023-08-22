@@ -42,13 +42,14 @@
             color:#84bc41;
             border: 1px solid #84bc41;
         }
+        @include mobile{
+            display: none;
+         }
         .btn{
         text-decoration: none;
         font-size: 20px;
         color: white;
-              @include mobile{
-                display: none;
-             }
+    
     }
 }
 }

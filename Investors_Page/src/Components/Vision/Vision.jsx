@@ -6,7 +6,12 @@ import mission from '../../assets/mission.png'
 const Vision = () => {
   return (
     <div className='vision'>
-         <h1 className="vistionTitle">Somos conscientes. Somos <span style={{color: '#84bc41'}}>Konscio.</span></h1>
+         <h1 className="vistionTitle">
+          Somos conscientes. 
+          Somos <span style={{color: '#84bc41'}}>Konscio. </span>
+          Somos <span style={{color: '#84bc41'}}>Vida Sostenible.</span>
+         
+         </h1>
       <div className="visionWrapper">
         <div className="visionLeft">
             <div className="visionLeftTop">

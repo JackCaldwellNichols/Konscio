@@ -79,7 +79,7 @@ const Benefits = () => {
                 </div>
             </div>
         </div>
-        <a target='_blank' className='benefitsBtn' href='https://www.vidasostenible.info/invertir-en-cohousing'>Saber Más</a>
+        <a target='_blank' className='benefitsBtn' href='https://www.vidasostenible.info/inversores/'>Saber Más</a>
     </div>
   )
 }

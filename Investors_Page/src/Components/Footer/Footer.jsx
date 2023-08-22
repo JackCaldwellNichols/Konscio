@@ -39,6 +39,7 @@ const Footer = () => {
               <a href='https://www.facebook.com/ProyectaKonscio' target='_blank'><FacebookIcon className='icon' style={{color: '#4267B2'}}/></a>
               <a href='https://www.instagram.com/proyectakonscio/' target='_blank'><InstagramIcon className='icon' style={{color: '#C13584'}}/></a>
             </div>
+            <span className='end'>Por la innovación social. </span>
         </div>
     </div>
   )
