@@ -1,17 +1,24 @@
 import React, {useState, useEffect, useRef} from 'react'
 import './contact.scss'
-import axios from 'axios'
+import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
+
 
 const Contact = () => {
 
-const nameRef = useRef()
-const phoneRef = useRef()
-const emailRef = useRef()
-const timeRef = useRef()
-const messageRef = useRef()
 const [loading, setLoading] = useState(false)
-const [error, setError] = useState(false)
 const [agree, setAgree] = useState(false);
+
+const {
+  register,
+  handleSubmit,
+  reset,
+  formState: { errors }
+} = useForm();
 
 const checkboxHandler = () => {
   // if agree === true, it will be set to false
@@ -20,54 +27,128 @@ const checkboxHandler = () => {
   // Don't miss the exclamation mark
 }
 
-const handleSubmit = async (e) => {
-    e.preventDefault()
-    setLoading(true)
-    try {
-      const res = await axios.post('http://localhost:8800/api/users', {
-        name: nameRef.current.value,
-        phone: phoneRef.current.value,
-        email: emailRef.current.value,
-        time: timeRef.current.value,
-        message: messageRef.current.value
-      })
-      setLoading(false)
-    } catch (error) {
-        setError(error.response.data)
-        setLoading(false)
- 
-    }
+const toastifySuccess = () => {
+  toast("Gracias! Te contactaremos pronto", {
+    position: 'bottom-center',
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    theme:"light",
+    pauseOnHover: true,
+    draggable: false,
+    className: 'submit-feedback success',
+    toastId: 'notifyToast'
+  })
 }
+
+const toastifyError = () => {
+  toast("Ayy! Algo ha salido mal. Inténtalo de nuevo por favor.", {
+    position: 'bottom-center',
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    theme:"light",
+    pauseOnHover: true,
+    draggable: false,
+    className: 'submit-feedback success',
+    toastId: 'notifyToast'
+  })
+}
+
+
+
+const onSubmit = async (data) => {
+  setLoading(true)
+  const { name, email, telephone, time, message } = data;
+  try {
+    const templateParams = {
+      name,
+      email,
+      time,
+      telephone,
+      message
+    };
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_TEMPLATE,
+      import.meta.env.VITE__EMAILJS_SERVICEID,
+      templateParams,
+      import.meta.env.VITE_EMAILJS_PUBKEY,
+    );
+      toastifySuccess()
+      reset()
+      setLoading(false)
+  } catch (e) {
+    toastifyError()
+    setError(false)
+  }
+};
 
   return (
     <div className='contact' id='contact'>
             <div className="contactTitle">
-                <h1>¿Quieres formar parte de un futuro sostenbile?</h1>
-                <h4>Mándanos tus datos de contacto y te informaremos más.</h4>
+                <h1>¿Quieres formar parte de un futuro mejor?</h1>
+                <h4>Mándanos tus datos y te informaremos más.</h4>
             </div>
             <div className="contactFormWrapper">
-                <form className='contactFrom' onSubmit={handleSubmit}>
+                <form className='contactFrom' onSubmit={handleSubmit(onSubmit)}>
                     <div className="top">
                         <div className="left">
-                            <input type="text" placeholder='Nombre' required ref={nameRef}/>
-                            <input type="text" placeholder='Teléfono'required ref={phoneRef}/>                    
+                            <input type="text" placeholder='Nombre'  name="name"   {...register('name', {
+                                  required: { value: true, message: 'Please enter your name' },
+                                  maxLength: {
+                                  value: 30,
+                                  message: 'Please use 30 characters or less'
+                                  }
+                                })}/>
+                            <input 
+                            type="text" 
+                            placeholder='Teléfono' 
+                            name='telephone' 
+                            {...register('telephone', {
+                            maxLength: {
+                            value: 75,
+                            message: 'Subject cannot exceed 75 characters'
+                            }
+                          })} required/>                    
                         </div>
                         <div className="right">
-                            <input type="email" placeholder='Correo electrónico' required ref={emailRef}/>
-                            <input type="text" placeholder='¿En qué horario te llamamos?' ref={timeRef}/>
+                            <input 
+                            type="email" 
+                            placeholder='Correo electrónico' 
+                            name='email' 
+                            {...register('email', {
+                              required: true,
+                              pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                            })}
+                            required/>
+                            <input 
+                            type="text" 
+                            placeholder='¿En qué horario te llamamos?' 
+                            name='time'
+                             {...register('time', {
+                              required: true,
+                            })}/>
                         </div>
                     </div>
                     <div className="bottom">
-                        <textarea placeholder='¿Qué es lo que te interesa?' ref={messageRef}/>
-                          {loading === true ? (
-                          <button type='submit' className='contactBtn'>Enviando...</button>
-                          ) : (
-                          <button type='submit' className='contactBtn' disabled={!agree}>Enviar</button>
-                          )}
-                          {error && (<span style={{color: 'red', marginTop: '20px'}}>{error}</span>)}
+                        <textarea 
+                        placeholder='¿Qué es lo que te interesa?' 
+                        name='message' 
+                        {...register('message', {
+                        required: true
+                      })}/>
+                      {!loading ? (
+                        <button type='submit' className={'contactBtn ' + (!agree && "disabled")} disabled={!agree}>Enviar</button>
+                      ): (
+                        <button type='submit' className='contactBtn'>
+                          <FontAwesomeIcon icon={faCircleNotch} spin/>
+                        </button>
+                      )}
+                          <ToastContainer />
                         <div className="contactBtnWrapper">
                           <input type="checkbox" className='agree' id="agree" onChange={checkboxHandler}/>
                           <label htmlFor="agree"> Acepto la <b>Política de Privacidad</b></label>
+                        
                         </div>
                     </div>
                 </form>

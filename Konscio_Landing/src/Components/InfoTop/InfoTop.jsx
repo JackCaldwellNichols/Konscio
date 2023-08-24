@@ -7,7 +7,7 @@ const InfoTop = () => {
     <div className='infoTop'>
         <div className="wrapperTop">
             <div className='infoTopHeader'>
-                 <span className='infoTopTitle'>¿Y Qué es el Co-Housing?</span>
+                 <h1 className='infoTopTitle'>¿Y Qué es el <span style={{color: '#84bc41'}}>Cohousing?</span></h1>
             </div>
             <div className="infoTopMain">
                 <div className="leftTop">
@@ -18,12 +18,12 @@ const InfoTop = () => {
                        
                             <h4>
                                 El Co-Housing es una forma de vida colaborativa, donde
-                                los grupos colaborativas, cada uno o en pareja, posees un
+                                los grupos colaborativas, cada uno o en pareja, poseen un
                                 apartamento privado para  preservr suintimidad y comparten grandes
                                 áreas comunes y actividades en talleres, excursiones, fiestas, 
                                 conciertos, sin olvidar la asistencia médica cuando lo precisan.
                                 <br /><br />
-                                No hay jerarquías, y los roels se reparten de forma natural.
+                                No hay jerarquías, y los roles se reparten de forma natural.
                                 La economía es privada, y las viviendas cuentan con todos los elementos
                                 que aseguran la independencia de los residentes. A pesar de ello, o
                                 justamente por este motivo, existen zonas comunes significativas, que se 

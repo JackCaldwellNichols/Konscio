@@ -8,7 +8,7 @@ const InfoBottom = () => {
     <div className='info'>
         <div className="wrapper">
             <div className='infoHeader'>
-                 <span className='infoTitle'>¿Y el Co-Housing es para mi?</span>
+                 <h1 className='infoTitle'>¿Y el <span style={{color: '#84bc41'}}>Cohousing</span> es para mi?</h1>
             </div>
             <div className="infoMain">
                 <div className="right">

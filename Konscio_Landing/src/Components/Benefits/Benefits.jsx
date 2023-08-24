@@ -11,7 +11,7 @@ const Benefits = () => {
   return (
     <div className='benefits'>
         <div className='benefitsHeader'>
-                <h1 className='benefitsTitle'>Los beneficios del Co-housing</h1>
+                <h1 className='benefitsTitle'>Los beneficios del <span style={{color: '#84bc41'}}>Cohousing</span></h1>
         </div>
       <div className="wrapper">
       <div className="card">
@@ -66,8 +66,8 @@ const Benefits = () => {
                 <PointOfSaleIcon className='cardIcon'/>
             </div>
             <div className="cardInfo">
-            <h3>AHORRAR</h3>
-            <span>Gastos mínimos y copmartidos, el co-housing ofrece la posibilidad de ahorrar.</span>
+            <h3>ECONOMÍA Y FINANZAS</h3>
+            <span>Gastos mínimos y compartidos, el cohousing ofrece la posibilidad de ahorrar.</span>
             </div>
         </div>
         </div>

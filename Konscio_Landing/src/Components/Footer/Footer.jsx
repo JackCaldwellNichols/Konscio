@@ -36,8 +36,8 @@ const Footer = () => {
             <span className='rightText'>Política de Privacidad</span>
           </div>
             <div className="iconWrapper">
-              <a href='https://www.facebook.com/ProyectaKonscio' target='_blank'><FacebookIcon className='icon'/></a>
-              <a href='https://www.instagram.com/proyectakonscio/' target='_blank'><InstagramIcon className='icon'/></a>
+              <a href='https://www.facebook.com/ProyectaKonscio' target='_blank'><FacebookIcon className='icon' style={{color: '#4267B2'}}/></a>
+              <a href='https://www.instagram.com/proyectakonscio/' target='_blank'><InstagramIcon className='icon' style={{color: '#C13584'}}/></a>
             </div>
         </div>
     </div>
