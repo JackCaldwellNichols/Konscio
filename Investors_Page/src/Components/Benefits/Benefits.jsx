@@ -75,7 +75,7 @@ const Benefits = () => {
                     <h3 className='cardTitle'>Objectivos Sostenibles</h3>
                 </div>
                 <div className="cardBottom">
-                    Alineados con los Objectivos Sostenibles de la Agenda 2030
+                    Alineados con los Objetivos Sostenibles de la Agenda 2030
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ const Contact = () => {
 
 const [loading, setLoading] = useState(false)
 const [agree, setAgree] = useState(false);
-
+console.log(agree)
 const {
   register,
   handleSubmit,
@@ -139,7 +139,7 @@ const onSubmit = async (data) => {
                         required: true
                       })}/>
                       {!loading ? (
-                        <button type='submit' className='contactBtn' disabled={!agree}>Enviar</button>
+                        <button type='submit' className={'contactBtn ' + (!agree && "disabled")} disabled={!agree}>Enviar</button>
                       ): (
                         <button type='submit' className='contactBtn'>
                           <FontAwesomeIcon icon={faCircleNotch} spin/>
@@ -147,7 +147,7 @@ const onSubmit = async (data) => {
                       )}
                           <ToastContainer />
                         <div className="contactBtnWrapper">
-                          <input type="checkbox" className='agree' id="agree" onChange={checkboxHandler}/>
+                          <input type="checkbox" className='agree' id="agree" onChange={checkboxHandler} required/>
                           <label htmlFor="agree"> Acepto la <b>Política de Privacidad</b></label>
                         
                         </div>

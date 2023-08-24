@@ -7,6 +7,10 @@
     flex-direction: column;
     align-items: center;
     height: max-content;
+    @include mobile{
+     margin-top: 0px;
+        
+}
     .vistionTitle {
         color: black;
         font-style: italic;
@@ -14,14 +18,14 @@
         font-size: 50px;
         font-family: 'Roboto';
         font-weight: 400;
-        padding: 50px 0px 50px 0px;
+        padding: 50px 100px;
         @include mobile{
             text-align: center;
             font-size: 30px;
             margin-bottom: 40px;
             font-weight: 400;
-            padding: 30px;
-             }
+            padding: 50px 30px;
+            }
     }
     .visionWrapper {
         display: flex;
