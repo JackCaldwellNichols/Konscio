@@ -57,7 +57,7 @@ const Benefits = () => {
             <h3 className="cardTitle">Demanda Segura</h3>
           </div>
           <div className="cardBottom">
-            22 proyectos avanazdos en España. Mas de 200 en constitución.
+            22 proyectos avanzados en España. Mas de 200 en constitución.
           </div>
         </div>
         <div className="benefitsCard">

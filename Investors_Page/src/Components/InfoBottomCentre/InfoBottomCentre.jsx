@@ -22,7 +22,7 @@ const InfoBottomCentre = () => {
             gestionar los proyectos con éxito.
           </span>
           <a
-            href="https://www.canva.com/design/DAFWvu823u4/PNKo2VOxaomHYSm2R69L5w/watch?utm_content=DAFWvu823u4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+            href="https://www.vidasostenible.info/red-especialistas/"
             target="_blank"
             rel="noreferrer"
           >

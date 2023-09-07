@@ -1,30 +1,31 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .bannerBtm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url('https://www.mcmasteroptimalaging.org/images/default-source/blog-post-images/co-housing435666a5389865188b9fff000027d16b.jpg?sfvrsn=fece03d6_2');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 90vh;
-    background-position: top;
-    font-family: 'Roboto';
-    @include mobile{
-        background: url('https://images.pexels.com/photos/691047/pexels-photo-691047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-        height: 70vh;
-        background-position: bottom;
-        }
-    .bannerBtmTitle {
-        font-size: 65px;
-        font-style: italic;
-        font-weight: 300;
-        color: white;
-        text-align: center;
-        @include mobile{
-            font-size: 40px;
-            font-weight: 300;
-            padding: 0px 20px;
-            }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://www.mcmasteroptimalaging.org/images/default-source/blog-post-images/co-housing435666a5389865188b9fff000027d16b.jpg?sfvrsn=fece03d6_2");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: top;
+  font-family: "Roboto";
+  @include mobile {
+    background: url("https://images.pexels.com/photos/691047/pexels-photo-691047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height: 70vh;
+    background-position: bottom;
+  }
+  .bannerBtmTitle {
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    padding: 0px 100px;
+    @include mobile {
+      font-size: 40px;
+      font-weight: 300;
+      padding: 0px 20px;
     }
+  }
 }
