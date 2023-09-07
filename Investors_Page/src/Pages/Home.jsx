@@ -9,10 +9,10 @@ import { useLayoutEffect } from "react";
 import Banner from "../Components/Banner/Banner";
 import BannerBottom from "../Components/BannerBottom/BannerBottom";
 import Why from "../Components/Why/Why";
-import ReactGA from "react-ga4";
+//import ReactGA from "react-ga4";
 
 function Home() {
-  ReactGA.initialize(import.meta.env.VITE_GA_TRACKING);
+  // ReactGA.initialize(import.meta.env.VITE_GA_TRACKING);
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
