@@ -35,7 +35,7 @@ const Footer = () => {
             <span className="rightText">Política de Privacidad</span>
           </Link>
         </div>
-        <div className="iconWrapper">
+        {/* <div className="iconWrapper">
           <a
             href="https://www.facebook.com/ProyectaKonscio"
             target="_blank"
@@ -50,7 +50,7 @@ const Footer = () => {
           >
             <InstagramIcon className="icon" style={{ color: "#C13584" }} />
           </a>
-        </div>
+        </div> */}
         <span className="end">Por la innovación social. </span>
       </div>
     </div>
