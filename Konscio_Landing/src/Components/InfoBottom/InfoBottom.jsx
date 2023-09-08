@@ -1,50 +1,60 @@
-import React from 'react'
-import './infoBottom.scss'
-import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+import React from "react";
+import "./infoBottom.scss";
+import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
 
 const InfoBottom = () => {
   return (
-    
-    <div className='info'>
-        <div className="wrapper">
-            <div className='infoHeader'>
-                 <h1 className='infoTitle'>¿Y el <span style={{color: '#84bc41'}}>Cohousing</span> es para mi?</h1>
-            </div>
-            <div className="infoMain">
-                <div className="right">
-                  <div className="rightIntro">
-                    <h3>Haces bien en preguntarlo</h3>
-                    <EmojiObjectsIcon className='icon'/>
-                  </div>
-            
-                        <h4>
-                        Algunas personas anhelan la conexión social. 
-                        El co-housing permite que todos se conecten entre sí y 
-                        tengan roles únicos en la comunidad, lo que les brinda un sentido de propósito. 
-                        Los residentes se unen para planificar eventos comunitarios, 
-                        comidas y desarrollar relaciones. 
-                        <br /><br />
-                        Además de la conexíon social, es el entorno ideal para un envejecimiento activo y 
-                        seguro. El Co-Housing ofrece la oportunidad
-                        de vivir en tu propia cases y comunidad con seguridad, independencia
-                        y comodidad. Contar con un sistema de apoyo a medida que envejecemos 
-                        es fundamental para mejorar la calidad de vida. 
-                        <br /><br />
-                        Cuando vives en una comunidad con personas que tienen 
-                        diferentes conjuntos de habilidades y experiencias, 
-                        tendrás la oportunidad de aprender de ellos.
-                        También, aportando tus conocimientos y experiencias 
-                        puede enriquecer tanto a ti como
-                        a los demás. 
-                        <br /><br />
-                        ¡Contacta con nosotros y te informamos más!
-                        </h4>
-                        <a className='infoBottomBtn' href='#contact'>Saber Más</a>
-                </div>
-            </div>
+    <div className="info">
+      <div className="wrapper">
+        <div className="infoHeader">
+          <h1 className="infoTitle">
+            ¿Y el <span style={{ color: "#84bc41" }}>Cohousing</span> es para
+            mi?
+          </h1>
         </div>
-    </div>
-  )
-}
+        <div className="infoMain">
+          <div className="right">
+            <div className="rightIntro">
+              <h3>Haces bien en preguntarlo</h3>
+              <EmojiObjectsIcon className="icon" />
+            </div>
 
-export default InfoBottom
+            <h4>
+              Algunas personas anhelan la conexión social. El co-housing permite
+              que todos se conecten entre sí y tengan roles únicos en la
+              comunidad, lo que les brinda un sentido de propósito. Los
+              residentes se unen para planificar eventos comunitarios, comidas y
+              desarrollar relaciones.
+              <br />
+              <br />
+              Además de la conexíon social, es el entorno ideal para un
+              envejecimiento activo y seguro. El Co-Housing ofrece la
+              oportunidad de vivir en tu propia cases y comunidad con seguridad,
+              independencia y comodidad. Contar con un sistema de apoyo a medida
+              que envejecemos es fundamental para mejorar la calidad de vida.
+              <br />
+              <br />
+              Cuando vives en una comunidad con personas que tienen diferentes
+              conjuntos de habilidades y experiencias, tendrás la oportunidad de
+              aprender de ellos. También, aportando tus conocimientos y
+              experiencias puede enriquecer tanto a ti como a los demás.
+              <br />
+              <br />
+              ¡Contacta con nosotros y te informamos más!
+            </h4>
+            <a
+              className="infoBottomBtn"
+              href="https://www.canva.com/design/DAFWvu823u4/PNKo2VOxaomHYSm2R69L5w/watch?utm_content=DAFWvu823u4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Saber Más
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default InfoBottom;

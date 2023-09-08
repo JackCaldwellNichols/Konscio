@@ -1,37 +1,40 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
-.felicidad {
-    height: 90vh;
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://whalebonemag.com/wp-content/uploads/2015/06/38589-Outdoor-Dinner-Party.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-position: center;
+  font-family: "Roboto";
+  @include tablet {
+    background: url("https://whalebonemag.com/wp-content/uploads/2015/06/38589-Outdoor-Dinner-Party.jpg");
+    height: 70vh;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: top;
-    background-image: url('https://images.pexels.com/photos/5638644/pexels-photo-5638644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    @include tablet{
-        background-position: center;
-       height: 60vh;
-        }
-    @include mobile{
-        background-position: center;
-       height: 50vh;
-        }
-        .felicidadTitle {
-            color: white;
-            font-style: italic;
-            font-size: 60px;
-            font-family: 'Inter';
-            text-align: center;
-            @include tablet{
-                font-size: 60px;
-                color: white;
-                font-weight: 500;
-                 }
-            @include mobile{
-                font-size: 30px;
-                color: white;
-                font-weight: bold;
-                 }
+  }
+  @include mobile {
+    background: url("https://images.pexels.com/photos/5638679/pexels-photo-5638679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height: 70vh;
+  }
+  .bannerTitle {
+    color: white;
+    font-style: italic;
+    font-size: 70px;
+    font-family: "Inter";
+    text-align: center;
+    @include tablet {
+      font-size: 60px;
+      color: white;
+      font-weight: 500;
     }
+    @include mobile {
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+    }
+  }
 }

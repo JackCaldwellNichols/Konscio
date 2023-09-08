@@ -1,35 +1,32 @@
-import React from 'react'
-import './nav.scss'
-import logo from '../../assets/FP.png'
-import MenuIcon from '@mui/icons-material/Menu';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import "./nav.scss";
+import logo from "../../assets/FP.png";
+import VS from "../../assets/VS.png";
+import { Link } from "react-router-dom";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Nav = ({open, setOpen}) => {
-
-  console.log(open)
-
+const Nav = () => {
   return (
-    <div className='nav'>
+    <div className="nav">
       <div className="left">
-        <a href='https://proyectakonscio.org/' target='_blank'><img src={logo} alt="" /></a>
+        <a href="https://proyectakonscio.org/" target="_blank" rel="noreferrer">
+          <img src={logo} alt="Proyecta Konscio" />
+        </a>
+        <a
+          href="https://www.vidasostenible.info/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={VS} alt="Vida Sostenible" />
+        </a>
       </div>
       <div className="right">
-        <a>For Investors</a>
-         {open ? ( 
-            <MenuOpenIcon className='hamburger' onClick={() => setOpen(false)}/>
-         ) : (
-            <MenuIcon className='hamburger' onClick={() => setOpen(true)}/>
-         )
-          }
+        <Link to="/" className="link">
+          <FontAwesomeIcon icon={faHome} className="homeIcon" />
+        </Link>
       </div>
-  
-        <div className={'menuOpen ' + (open && 'active')}>
-          <a>For Investors</a>
-        </div> 
-    
-
     </div>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

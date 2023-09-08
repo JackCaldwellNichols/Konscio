@@ -1,159 +1,172 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .vision {
-    margin: 50px 0px 100px 0px;
-    font-family: 'Inter';
+  margin: 50px 0px 100px 0px;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  .vistionTitle {
+    color: black;
+    font-style: italic;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Inter";
+
+    padding: 50px 50px;
+    @include mobile {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 40px;
+      font-weight: bold;
+      padding: 30px;
+    }
+  }
+  .visionWrapper {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: max-content;
-    .vistionTitle {
-        color: black;
-        font-style: italic;
+    gap: 150px;
+    @include tablet {
+      flex-direction: column;
+      gap: 100px;
+    }
+    @include mobile {
+      flex-direction: column;
+      gap: 100px;
+    }
+    .visionLeft {
+      height: 500px;
+      width: 500px;
+      border: 1px solid rgb(236, 242, 236);
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      flex-direction: column;
+      background: -webkit-linear-gradient(
+        to top,
+        #edebd4,
+        #dad299
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to top,
+        #edebd4,
+        #ffffff
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      transition: 0.3s ease-in;
+      position: relative;
+      &:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      @include tablet {
+        width: 700px;
+      }
+      @include mobile {
+        width: 300px;
+        height: 400px;
+      }
+      .visionLeftTop {
+        font-size: 30px;
         text-align: center;
-        font-size: 50px;
-        font-family: 'Inter';
-        font-weight: 400;
-        padding: 50px 0px 50px 0px;
-        @include mobile{
-            text-align: center;
-            font-size: 30px;
-            margin-bottom: 40px;
-            font-weight: bold;
-            padding: 30px;
-             }
+        @include mobile {
+          font-size: 25px;
+        }
+      }
+      .visionLeftBottom {
+        line-height: 30px;
+        padding: 30px;
+        text-align: justify;
+        font-size: 20px;
+        @include mobile {
+          padding: 20px;
+        }
+        .VisionLeftBtmText {
+          line-height: 30px;
+          text-align: center;
+          font-size: 20px;
+        }
+        img {
+          position: absolute;
+          height: 230px;
+          bottom: 0;
+          left: 30px;
+          object-fit: cover;
+          @include tablet {
+            left: 120px;
+            height: 260px;
+          }
+          @include mobile {
+            display: none;
+          }
+        }
+      }
     }
-    .visionWrapper {
+    .visionRight {
+      height: 500px;
+      width: 500px;
+      border: 1px solid rgb(236, 242, 236);
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      flex-direction: column;
+      background: -webkit-linear-gradient(
+        to top,
+        #edebd4,
+        #dad299
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to top,
+        #edebd4,
+        #ffffff
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      transition: 0.3s ease-in;
+      position: relative;
+      &:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      @include tablet {
+        width: 700px;
+      }
+      @include mobile {
+        width: 300px;
+        height: 400px;
+      }
+      .visionRightTop {
+        font-size: 30px;
+        text-align: center;
+        @include mobile {
+          font-size: 25px;
+        }
+      }
+      .visionRightBottom {
         display: flex;
-        align-items: center;
-        gap: 150px;
-        @include tablet{
-            flex-direction: column;
-            gap: 100px;
-                }
-        @include mobile{
-         flex-direction: column;
-         gap: 100px;
-             }
-        .visionLeft {
-            height: 500px;
-            width: 500px;
-            border: 1px solid rgb(236, 242, 236);
-            display: flex;
-            align-items: center;
-            border-radius: 30px;
-            flex-direction: column;
-            background: -webkit-linear-gradient(to top, #edebd4, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to top, #edebd4, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            transition: 0.3s ease-in;
-            position: relative;
-            &:hover {
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            }
-            @include tablet{
-                width: 700px;
-              }
-            @include mobile{
-              width: 300px;
-              height: 400px;
-            }
-            .visionLeftTop{
-                font-size: 30PX;
-                text-align: center;
-                @include mobile{
-                    font-size: 25PX;
-                  }
-            }
-            .visionLeftBottom {
-                line-height: 30px;
-                padding: 30px;
-                text-align: justify;
-                font-size: 20px;
-                @include mobile{
-                    padding: 20px;
-                  }
-                .VisionLeftBtmText{
-                    line-height: 30px;
-                    text-align: center;
-                    font-size: 20px;
-
-                  
-                }
-                img {
-                    position: absolute;
-                    height: 230px;
-                    bottom: 0;
-                    left: 30px;
-                    object-fit: cover;
-                    @include tablet{
-                        left: 120px;
-                        height: 260px;
-                       }
-                    @include mobile{
-                       display: none;
-                      }
-                }
-            }
+        flex-direction: column;
+        padding: 30px;
+        @include mobile {
+          padding: 20px;
         }
-        .visionRight{
-            height: 500px;
-            width: 500px;
-            border: 1px solid rgb(236, 242, 236);
-            display: flex;
-            align-items: center;
-            border-radius: 30px;
-            flex-direction: column; 
-            background: -webkit-linear-gradient(to top, #edebd4, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to top, #edebd4, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            transition: 0.3s ease-in;
-            position: relative;
-            &:hover {
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            }
-            @include tablet{
-                width: 700px;
-              }
-            @include mobile{
-              width: 300px;
-              height: 400px;
-            }
-            .visionRightTop{
-                font-size: 30PX;
-                text-align: center;
-                @include mobile{
-                    font-size: 25PX;
-                  }
-            }
-            .visionRightBottom {
-                display: flex;
-                flex-direction: column;
-                padding: 30px;
-                @include mobile{
-                    padding: 20px;
-                  }
-                .VisionRightBtmText{
-                    line-height: 30px;
-                    text-align: left;
-                    font-size: 20px;
-                    @include mobile{
-                        text-align: center;
-                      }
-                }
-                img {
-                    position: absolute;
-                    height: 300px;
-                    bottom: 0;
-                    left: 30px;
-                    @include tablet{
-                        left: 140px;
-                        height: 280px;
-                       }
-                    @include mobile{
-                        display: none;
-                      }
-                }
-            }
+        .VisionRightBtmText {
+          line-height: 30px;
+          text-align: left;
+          font-size: 20px;
+          @include mobile {
+            text-align: center;
+          }
         }
-
+        img {
+          position: absolute;
+          height: 300px;
+          bottom: 0;
+          left: 30px;
+          @include tablet {
+            left: 140px;
+            height: 280px;
+          }
+          @include mobile {
+            display: none;
+          }
+        }
+      }
     }
+  }
 }
