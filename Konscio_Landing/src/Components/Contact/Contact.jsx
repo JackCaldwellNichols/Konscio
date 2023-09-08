@@ -77,7 +77,10 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="contactTitle">
-        <h1>¿Quieres formar parte de un futuro mejor?</h1>
+        <h1>
+          ¿Quieres formar parte de un{" "}
+          <span style={{ color: "#84bc41" }}>futuro mejor?</span>
+        </h1>
         <h4>Mándanos tus datos y te informaremos más.</h4>
       </div>
       <div className="contactFormWrapper">
