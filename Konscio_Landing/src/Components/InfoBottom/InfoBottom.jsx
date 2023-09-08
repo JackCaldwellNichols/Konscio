@@ -1,4 +1,3 @@
-import React from "react";
 import "./infoBottom.scss";
 import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
 

@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import "./contact.scss";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleNotch, faL } from "@fortawesome/free-solid-svg-icons";
+import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);

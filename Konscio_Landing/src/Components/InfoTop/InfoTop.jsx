@@ -1,4 +1,3 @@
-import React from "react";
 import "./infoTop.scss";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 
