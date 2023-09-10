@@ -14,8 +14,7 @@ const Hero = () => {
         </div>
         <div className="right">
           <p>
-            Crea la comunidad soñada en{" "}
-            <b style={{ color: "#84bc41" }}>Cohousing.</b> <br />
+            Crea la comunidad soñada en <b>Cohousing.</b> <br />
             Vive una vida sostenible. <br />
             Comparte los momentos importantes con seres queridos. <br />
             En Fundación Proyecta Konscio, con la colabaración de Vida
