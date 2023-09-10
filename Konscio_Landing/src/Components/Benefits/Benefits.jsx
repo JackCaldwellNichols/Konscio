@@ -35,7 +35,7 @@ const Benefits = () => {
             <h3>VIVIENDA SALUDABLE</h3>
             <span>
               Una casa ecológica, hecha a tu medida, para tu bienestar
-              emocional..
+              emocional.
             </span>
           </div>
         </div>

@@ -18,11 +18,10 @@ const InfoTop = () => {
             </div>
 
             <h4>
-              El Co-Housing es una forma de vida colaborativa, donde los grupos
-              colaborativas, cada uno o en pareja, poseen un apartamento privado
-              para preservr suintimidad y comparten grandes áreas comunes y
-              actividades en talleres, excursiones, fiestas, conciertos, sin
-              olvidar la asistencia médica cuando lo precisan.
+              El Cohousing es una forma de vida colaborativa, que respeta la
+              intimidad, potencia la autonomía y facilita el apoyo mutuo, con
+              servicios y actividades comunes como talleres, excursiones,
+              conciertos, sin olvidar la asistencia médica cuando lo precisan.
               <br />
               <br />
               No hay jerarquías, y los roles se reparten de forma natural. La
@@ -30,12 +29,12 @@ const InfoTop = () => {
               elementos que aseguran la independencia de los residentes. A pesar
               de ello, o justamente por este motivo, existen zonas comunes
               significativas, que se comprenden como extensión de las viviendas
-              cuta administración sigue a cargo del grupo que habita la
+              cuya administración sigue a cargo del grupo que habita la
               comunidad.
             </h4>
             <a
               className="infoTopBtn"
-              href="https://www.canva.com/design/DAFWvu823u4/PNKo2VOxaomHYSm2R69L5w/watch?utm_content=DAFWvu823u4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              href="https://www.youtube.com/@vidasosteniblecohousing5472/playlists"
               target="_blank"
               rel="noreferrer"
             >
