@@ -1,5 +1,6 @@
 import "./nav.scss";
-import logo from "../../assets/FP.png";
+import logo from "../../assets/funPr.png";
+import mobileLogo from "../../assets/FP.png";
 import VS from "../../assets/VS.png";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,7 +25,12 @@ const Nav = () => {
             alt="Fundación Proyecta Konscio Logo"
             className="logo"
           />
-          <span style={{ color: "black" }}>Fundación Projecta Konscio</span>
+          <img
+            src={mobileLogo}
+            alt="Fundación Proyecta Konscio Logo"
+            className="mobileLogo"
+          />
+          {/* <span style={{ color: "black" }}>Fundación Projecta Konscio</span> */}
         </a>
         <a
           href="https://www.vidasostenible.info/"
@@ -36,7 +42,7 @@ const Nav = () => {
             textDecoration: "none",
           }}
         >
-          <img src={VS} alt="Vida Sostenible Logo" className="logo" />
+          <img src={VS} alt="Vida Sostenible Logo" className="VSlogo" />
           <span style={{ color: "black" }}>Vida Sostenible</span>
         </a>
       </div>

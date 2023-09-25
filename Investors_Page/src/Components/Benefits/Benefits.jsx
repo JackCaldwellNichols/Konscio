@@ -17,7 +17,7 @@ const Benefits = () => {
         Invierte en Cohousing de alquiler -{" "}
         <span style={{ color: "#84bc41" }}>una oportunidad al alza.</span>
       </h1>
-      <h2>Los Beneficios son muchos</h2>
+      <h2>Los beneficios son muchos</h2>
       <div className="benefitsWrapper">
         <div className="benefitsCard">
           <div className="cardTop">
