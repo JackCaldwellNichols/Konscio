@@ -1,6 +1,7 @@
 import "./footer.scss";
-import FP from "../../assets/FP.png";
-import VS from "../../assets/VS.png";
+
+import vsc from "../../assets/vsc.png";
+import logo from "../../assets/funPr.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -9,19 +10,19 @@ const Footer = () => {
       <div className="left">
         <div className="fundacionProyecta">
           <div className="orgImg">
-            <img src={FP} alt="Fundación Social" />
+            <img src={logo} alt="Fundación Proyecta" />
           </div>
-          <div className="orgInfo">
+          {/* <div className="orgInfo">
             <span className="orgName">Fundación Proyecta Konscio</span>
-          </div>
+          </div> */}
         </div>
         <div className="vidaSostenible">
           <div className="orgImg">
-            <img src={VS} alt="Fundación Social" className="orgImage" />
+            <img src={vsc} alt="Fundación Social" className="orgImage" />
           </div>
-          <div className="orgInfo">
+          {/* <div className="orgInfo">
             <span className="orgName">Vida Sostenible</span>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="right">

@@ -1,7 +1,7 @@
 import "./nav.scss";
 import logo from "../../assets/funPr.png";
 import mobileLogo from "../../assets/FP.png";
-import VS from "../../assets/VS.png";
+import vsc from "../../assets/vsc.png";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
@@ -42,8 +42,8 @@ const Nav = () => {
             textDecoration: "none",
           }}
         >
-          <img src={VS} alt="Vida Sostenible Logo" className="VSlogo" />
-          <span style={{ color: "black" }}>Vida Sostenible</span>
+          <img src={vsc} alt="Vida Sostenible Logo" className="VSlogo" />
+          {/* <span style={{ color: "black" }}>Vida Sostenible</span> */}
         </a>
       </div>
       <div className="right">
